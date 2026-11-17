@@ -3,7 +3,7 @@ plugins {
     `java-library`
 }
 
-group = "dev.adengine"
+group = "io.github.tor2606-cyber"
 
 val libs = the<VersionCatalogsExtension>().named("libs")
 fun lib(alias: String) = libs.findLibrary(alias).get()

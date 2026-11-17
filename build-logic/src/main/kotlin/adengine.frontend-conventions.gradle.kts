@@ -4,4 +4,4 @@ plugins {
     base
 }
 
-group = "dev.adengine"
+group = "io.github.tor2606-cyber"
