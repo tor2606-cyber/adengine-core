@@ -1,0 +1,40 @@
+name: Task
+description: A unit of planned work (one task, one pull request)
+title: "[Mx-nn] "
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      description: plat, dom, api, ui, dec, cons, tag, evt, rep, val, ops, qa or doc
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What to build.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Checkable acceptance criteria.
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: depends
+    attributes:
+      label: Depends on
+      description: Issues that must be finished first (#n).
+  - type: input
+    id: refs
+    attributes:
+      label: References
+      description: Requirement IDs and ADRs, e.g. DEC-02, ADR-20
+  - type: input
+    id: estimate
+    attributes:
+      label: Estimate (ideal days)

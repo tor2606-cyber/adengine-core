@@ -1,0 +1,31 @@
+name: Bug
+description: Something does not work as specified
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Security problem?** Do not file it here. See SECURITY.md and report it privately.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the decision request or explain output if relevant. Remove real IP addresses and consent strings.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
