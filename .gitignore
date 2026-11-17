@@ -1,0 +1,38 @@
+# Gradle / JVM
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+*.log
+hs_err_pid*
+
+# Kotlin
+.kotlin/
+
+# Node / front end
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.vite/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+!.vscode/extensions.json
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets and local overrides (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+local.properties
+compose.override.yaml
